@@ -1,0 +1,114 @@
+body {
+  font: 100% "Space Mono", monospace;
+  color: $primary-color;
+  margin: 0;
+  padding: $pads;
+  background-color: #000;
+  background-image: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#fff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#fff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background-attachment: fixed
+}
+.btn{
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  margin: auto;
+}
+
+.btncol{
+  color: $primary-color;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: #717171;
+  text-align: center;
+
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap
+}
+article{
+  section {
+  flex-basis: 45%;
+  border: 1px silver solid;
+ @include boxy-pops;
+  padding: $pads;
+  margin: 16px;
+  clear: both;
+  overflow: auto
+}
+
+section#selling-points {
+  flex-grow: 2;
+  flex-basis: 100%
+}
+
+code {
+  background: #000;
+  border: 1px solid #ddd;
+  color: $primary-color;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: $pads;
+  display: block;
+  word-wrap: break-word
+}
+
+code.before {
+  float: left;
+  width: 40%
+}
+
+code.after {
+  float: right;
+  width: 40%
+}
+}
+h1,
+h2,
+h1 {
+  text-align: center
+}
+
+h6 {
+  color: $primary-color;
+  text-align: center;
+  font-size: 2em;
+  padding: $h6mod;
+  margin-bottom: 0
+}
+
+.messui {
+  border: 1px solid #ccc;
+  padding: $pads;
+  color: blue;
+  width: 100%
+}
+.message{
+  @extend .messui;
+}
+
+.success {
+  @extend .messui;
+  background-color: green;
+
+}
+
+.error {
+  @extend .messui;
+  background-color: red;
+
+}
+
+.warning {
+  @extend .messui;
+  background-color: orange;
+
+}
